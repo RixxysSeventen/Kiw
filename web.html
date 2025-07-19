@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Halaman Pembayaran</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Video sebagai background */
+    #bg-video {
+      position: fixed;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      min-height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+
+    .overlay {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      padding: 20px;
+      max-width: 500px;
+      margin: auto;
+      margin-top: 50px;
+      background: rgba(255, 255, 255, 0);
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(255,255,255, 0);
+    }
+
+    img {
+      max-width: 80%;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    .button-wa {
+      display: inline-block;
+      padding: 15px 25px;
+      background-color: #FF0000;
+      color: white;
+      font-size: 18px;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+
+    .button-wa:hover {
+      background-color: #1ebe5d;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Ganti link video di bawah -->
+  <video autoplay muted loop id="bg-video">
+    <source src="https://files.catbox.moe/v7sf8k.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+  </video>
+
+  <div class="overlay">
+    <!-- Ganti banner -->
+    <img src="https://via.placeholder.com/500x250?text=Banner+Pembayaran" alt="" />
+
+    <!-- Ganti logo -->
+    <img src="https://files.catbox.moe/l5grec.jpg" width="120" height="110">
+    <p style="color:white;">SCAN FOR BUY</p>
+
+    <!-- QRIS sesuai permintaan -->
+    <img src="https://files.catbox.moe/qvs6de.jpg" alt="QRIS Pembayaran" />
+   
+    <!-- Tombol WA -->
+    <br><br>
+    <a href="https://wa.me/6282114166871?text=Halo%2C+saya+sudah+melakukan+pembayaran" class="button-wa" target="_blank">
+      Saya Sudah Bayar (Chat WhatsApp)
+    </a>
+  </div>
+
+</body>
+</html>
